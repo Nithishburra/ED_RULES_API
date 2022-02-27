@@ -2,6 +2,7 @@ package com.ashokit.rest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ashokit.Binding.AppDeterminationReq;
@@ -15,7 +16,7 @@ public class AppDeterminationController {
 	private AppDeterminationService service;
 
 	@PostMapping("/plan")
-	public AppDeterminationRes CheckEligibility(AppDeterminationReq req) {
+	public AppDeterminationRes CheckEligibility(@RequestBody AppDeterminationReq req) {
 		return service.checkEligibility(req);
 
 	}
