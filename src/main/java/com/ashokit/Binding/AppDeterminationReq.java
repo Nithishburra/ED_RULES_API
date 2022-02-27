@@ -13,4 +13,5 @@ public class AppDeterminationReq{
 	private Integer kidsEligible;
 	private Integer age;
 	private String empStatus;
+	private Integer Caseno;
 }
