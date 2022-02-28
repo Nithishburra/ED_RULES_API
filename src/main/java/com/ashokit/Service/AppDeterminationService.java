@@ -17,6 +17,7 @@ public class AppDeterminationService {
 		    response.setPlanName(status);
 		    response.setName(req.getName());
 		    response.setSsn(req.getSsn());
+		    response.setCaseNo(req.getCaseNo());
 		
 		if("SNAP".equals(status)) {
 			if(req.getIncome()<=200.00) {
