@@ -13,6 +13,8 @@ public class AppDeterminationRes {
 	private String endDate;
 	private String benefitAmt;
 	private String denialReason;
+	private Integer caseNo;
+
 	
 	
 }
